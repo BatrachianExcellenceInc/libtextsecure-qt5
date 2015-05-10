@@ -1,0 +1,6 @@
+Makefile
+libtextsecureqt5.so*
+moc_*cpp
+*o
+.gitignore
+

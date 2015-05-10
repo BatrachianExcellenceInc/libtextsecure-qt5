@@ -3,7 +3,7 @@
 #include <QObject>
 #include <QUrl>
 #include "ts_exception.h"
-#include "client_conf.h"
+#include "file_client_conf.h"
 #include "util/keyhelper.h"
 
 

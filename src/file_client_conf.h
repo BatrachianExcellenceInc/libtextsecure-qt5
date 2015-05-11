@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include "ts_exception.h"
 #include "file_pre_key_store.h"
-#include "util/keyhelper.h"
+#include "ts_keyhelper.h"
 
 namespace TextSecure {
     class ClientConfException : public TSException {
@@ -16,7 +16,7 @@ namespace TextSecure {
         Q_OBJECT
         private:
             // members
-            KeyHelper keyHelper; // so the class can verify keys exist
+            TSKeyHelper keyHelper; // so the class can verify keys exist
             FilePreKeyStore preKeyStore; // to avoid subclassing libaxolot's keyhelper for this
             QString baseUrl;
             QString confDirPath;

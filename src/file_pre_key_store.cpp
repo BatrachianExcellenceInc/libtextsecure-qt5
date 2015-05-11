@@ -18,7 +18,7 @@ PreKeyStoreException::PreKeyStoreException(QString msg) : TSException(msg){
 /**
  * Actual code
  */
-FilePreKeyStore::FilePreKeyStore(QString preKeyDir, QString signedPreKeyDir, KeyHelper keyHelper) {
+FilePreKeyStore::FilePreKeyStore(QString preKeyDir, QString signedPreKeyDir, TSKeyHelper keyHelper) {
     this->preKeyDirPath = preKeyDir;
     this->preKeyDir = QDir(preKeyDirPath);
 

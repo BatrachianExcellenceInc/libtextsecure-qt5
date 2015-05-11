@@ -4,7 +4,6 @@
 #include <QUrl>
 #include "ts_exception.h"
 #include "file_client_conf.h"
-#include "util/keyhelper.h"
 
 
 namespace TextSecure {

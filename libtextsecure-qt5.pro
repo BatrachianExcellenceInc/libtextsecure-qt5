@@ -13,11 +13,13 @@ CONFIG   -= app_bundle
 HEADERS += src/ts_exception.h \
            src/file_pre_key_store.h \
            src/file_client_conf.h \
+           src/ts_keyhelper.h \
            src/api_client.h
 
 SOURCES += src/ts_exception.cpp \
            src/file_pre_key_store.cpp \
            src/file_client_conf.cpp \
+           src/ts_keyhelper.cpp \
            src/api_client.cpp
 
 INCLUDEPATH += ../libaxolotl-qt5/

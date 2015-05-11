@@ -3,16 +3,10 @@
 
 #include <QDir>
 #include <QString>
-#include "ts_exception.h"
-#include "state/prekeystore.h"
-#include "util/keyhelper.h"
+#include "ts_pre_key_store.h"
+#include "ts_keyhelper.h"
 
 namespace TextSecure {
-    class PreKeyStoreException : public TSException {
-        public:
-            PreKeyStoreException(QString msg);
-    };
-
     class FilePreKeyStore : public PreKeyStore {
         private:
             QString getKeyFile(qulonglong pre_key_id);
@@ -21,11 +15,11 @@ namespace TextSecure {
             QString signedPreKeyDirPath;
             QDir signedPreKeyDir;
             QDir confDir;
-            KeyHelper keyHelper;
+            TSKeyHelper keyHelper;
 
         public:
             FilePreKeyStore() {};  // Keep the compiler happy
-            FilePreKeyStore(QString preKeyDir, QString signedPreKeyDir, KeyHelper keyHelper);
+            FilePreKeyStore(QString preKeyDir, QString signedPreKeyDir, TSKeyHelper keyHelper);
             void verifyPreKeyDir();
             void verifySignedPreKeyDir();
             void verifyPreKeys();

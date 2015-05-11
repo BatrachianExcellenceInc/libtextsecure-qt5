@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include "file_client_conf.h"
 #include "ecc/eckeypair.h"
-#include "util/keyhelper.h"
 
 using namespace TextSecure;
 
